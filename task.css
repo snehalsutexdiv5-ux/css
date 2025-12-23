@@ -1,0 +1,84 @@
+.box{
+    height: 50px;
+    padding: 20px;
+    border: 3 px solid black;
+    margin: 15px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    gap: 10PX ;
+       grid-template-columns: repeat(3, 1fr);
+
+}
+
+.grid div{
+    background-color: rgb(189, 194, 199);
+    text-align: center;
+    padding: 20px;   
+    
+}
+
+ul {
+  list-style-type: square;  
+  padding-left: 20px;
+  background-color: rgb(141, 158, 206);
+}
+
+li {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.card {
+     width: 220px;
+  padding: 15px;
+  box-shadow: 50px ;
+  border-radius: 8px;
+  background-color: cadetblue;
+  height: 100px;
+
+}
+
+.menu{
+    display: flex;
+    background-color: rgb(228, 153, 153);
+    padding: 10px;
+    cursor: pointer;
+    width: 60px;
+    
+}
+
+.list {
+  display: none;
+  background: rgb(65, 55, 160);
+}
+
+.menu:hover .list {
+  display: block;
+}
+
+.list div {
+  padding: 8px;
+}
+
+.loader{
+
+    width: 50px;
+    height: 50px;
+    background-color: cadetblue;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
