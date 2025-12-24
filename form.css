@@ -1,0 +1,251 @@
+/* ===== BASIC RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+/* ===== HEADER ===== */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: white;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-header h1 {
+  font-size: 18px;
+  margin: 0;
+  color: #003366;
+}
+
+.top-header p {
+  margin: 0;
+  font-size: 13px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: #0b3c68;
+  display: flex;
+  padding: 8px 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  background: #072b4d;
+}
+
+/* ===== COMMON CONTAINER ===== */
+.container,
+.form-box,
+.main-box,
+.captcha-box {
+  width: 95%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* ===== NOTE ===== */
+.note {
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* ===== SECTION BOX ===== */
+.box,
+.form-box,
+.language-box {
+  background: white;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* ===== SECTION TITLE ===== */
+.section-title,
+.box-title,
+.captcha-header {
+  background: #2f6fa5;
+  color: white;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* ===== FORM GRID ===== */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+.form-grid > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== INPUTS ===== */
+label {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  padding: 6px;
+  font-size: 13px;
+  width: 100%;
+}
+
+textarea {
+  height: 70px;
+  resize: none;
+}
+
+/* ===== RADIO & CHECKBOX ===== */
+.radio,
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 13px;
+}
+
+/* ===== FULL WIDTH ===== */
+.full {
+  grid-column: span 4;
+}
+
+/* ===== LANGUAGE + INSTRUCTION ===== */
+.main-box {
+  display: flex;
+  gap: 20px;
+}
+
+.language-box {
+  width: 65%;
+}
+
+.instruction-box {
+  width: 35%;
+  background: #fdecea;
+  border: 1px solid #f5c2c7;
+  padding: 12px;
+}
+
+.instruction-box h4 {
+  margin-top: 0;
+  color: #b30000;
+  font-size: 14px;
+}
+
+.instruction-box li {
+  font-size: 13px;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background: #e9f1fb;
+  padding: 8px;
+  font-size: 13px;
+}
+
+td {
+  padding: 8px;
+}
+
+/* ===== UPLOAD SECTION ===== */
+.section {
+  border: 1px solid #2f6fa5;
+  margin: 15px;
+  padding: 15px;
+}
+
+/* ===== BUTTONS ===== */
+.btn,
+.save-btn {
+  background: #2f6fa5;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn:hover,
+.save-btn:hover {
+  background: #1f5c8c;
+}
+
+.save-btn {
+  background: #5cb85c;
+}
+
+/* ===== DECLARATION ===== */
+.declaration {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* ===== CAPTCHA ===== */
+.captcha-box {
+  border: 1px solid #2f6fa5;
+}
+
+.captcha-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.captcha-code {
+  background: orange;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 8px 18px;
+  letter-spacing: 3px;
+}
+
+.captcha-input {
+  width: 200px;
+  height: 35px;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.btn-area {
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,101 @@
+search:codeshare.io/abcd
+
+set:
+
+git config --global user.name "snehalsutexdiv5-ux"
+git config --global user.email "snehalsutexdiv5@gmail.com"
+ git config --list
+
+​
+unset:
+git config --global --unset user.name
+git config --global --unset user.email
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+cd program1
+git add
+(add file)
+git puch original main
+
+
+
+
+code share.io/tailwind
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+windowshell (as adminisrator)
+______________________________________________
+new folder ma terminal ma  first cd.tail than tab and than past above file karvany then crome ma search ma tail search karin than open code 
+
+delete or uninstall  
+​npm i
+
+
+branch no bane to
+
+terminal vs ma git init
+npm install tailwindcss @tailwindcss/cli
+npm run start
+git branch
+
+and jo error ave to bra
+_______________________________________________________________________________________________________________
+date 22-12-25
+
+crome
+search awwwards (website) then go on explore and select of the year
+
+open crome and add extenstion search than click first link and search below
+
+wappalyzer
+st
+_______________________________________________________________________________________________________________
+
+Day 7 Task
+
+HTML Basic Tags:
+
+header, main, footer, aside, article, section, div, p, cite, em, i, b, u, strong, s, del, pre, sub, sup, code, tt, q, abbr, a, link, marquee and etc
+ 
+HTML Form Tags and input tyeps:
+
+number, text, password, email, tel, date-time, date-time-local, checkbox, select, option, radio btn, btn, submit, reset, month, year, week, color, file, hidden, range, search, url and etc
+ 
+HTML Table Tags:
+
+table, tr, td, caption, th, thead, tbody, tfooter, colspan, rowspan and etc
+ 
+ 
+CSS Basic Style:
+
+background, background-color, color(text color), font-size, font-style, font-weight, font-famliy, background-size, backgorund-position, padding, margin, position, display, text-align, background-repeat, border, border-radius, height, width, box-shadow
+ 
+CSS Advance Style:
+
+keyframe(animation), media quary (max-width, min-width), transform, transition, align-items, justify-content, gap, flex-direction, filter, text-indent, z-index, white-space, overflow, Pseudo-class, Pesudo-element, Ocpacity
+ 
+ 
+- CSS Box Model
+
+- CSS Grid View
+
+- CSS list
+
+- Card Creation
+
+- Create a Dropdown Menu (without HTML Form - only CSS)
+
+- Create Website Layout and skeleton
+
+- CSS Loader
+
+- CSS Pagination
+
+- CSS Flexbox
+
+- CSS Container
+
+ 
+
