@@ -78,7 +78,57 @@ li {
     background-color: cadetblue;
   animation: spin 1s linear infinite;
 }
+
 @keyframes spin {
   100% { transform: rotate(360deg); }
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.pagination a {
+  padding: 8px 14px;
+  text-decoration: none;
+  background-color: #4389f1;
+  color: black;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.pagination a:hover {
+  background: #4c7aaf;
+  color: white;
+}
+
+
+.flexbox {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  gap: 15px;
+  height: 100px;
+  background-color: rgb(63, 74, 241);
+}
+
+.flexbox div {
+  background-color: #4389f1;
+  color: white;
+  padding: 15px ;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;        
+  margin: auto;         
+  padding: 20px;        
+  background-color: #062d4d;
+  border-radius: 6px;
+}
