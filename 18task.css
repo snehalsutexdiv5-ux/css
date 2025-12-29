@@ -373,3 +373,35 @@
 .btn:active {
     transform: scale(0.95);     
 }
+
+
+/* 12 task */
+
+.filters-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.filter-box {
+    text-align: center;
+}
+
+.filter-box img {
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Filters */
+.brightness { filter: brightness(150%); }
+.blur { filter: blur(3px); }
+.sepia { filter: sepia(100%); }
+.grayscale { filter: grayscale(100%); }
+.hue-rotate { filter: hue-rotate(90deg); }
+.contrast { filter: contrast(200%); }
+.drop-shadow { filter: drop-shadow(5px 5px 5px gray); }
+.saturate { filter: saturate(200%); }
