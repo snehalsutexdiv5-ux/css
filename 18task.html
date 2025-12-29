@@ -90,16 +90,12 @@
 5. Show different types of display like none, block, inline, inline-block, flex, grid
 (ex. h1 show inline display vs h1 without inline display (without style))
  -->
+
 <br>
 <br>
-
-<h2>Display Property Examples</h2>
-
-<h3>Block Display (Default h1)</h3>
 <h1>This is a block element</h1>
-<h1>This appears on a new line</h1>
 
-<h3>Inline Display (h1 changed to inline)</h3>
+<h3>Inline Display</h3>
 <h1 class="inline">Inline H1</h1>
 <h1 class="inline">Inline H1</h1>
 
@@ -109,7 +105,7 @@
 
 <h3>Display None</h3>
 <p>This text is visible</p>
-<p class="none">This text is hidden (display: none)</p>
+<p class="none">This text is hidden</p>
 
 <h3>Flex Display</h3>
 <div class="flex-container">
@@ -120,13 +116,155 @@
 
 <h3>Grid Display</h3>
 <div class="grid-container">
-    <div class="grid-item">A</div>
-    <div class="grid-item">B</div>
-    <div class="grid-item">C</div>
-    <div class="grid-item">D</div>
+    <div class="grid-item">panipuri</div>
+    <div class="grid-item">dahipuri</div>
+    <div class="grid-item">galpuri</div>
+    <div class="grid-item">chart</div>
+</div>
+<!-- 
+6. create a section that show position property like absolute, fixed, sticky, relative (ex. p tag that show fixed position property)
+  -->
+<br>
+<br>
+  <h2>Position Property Examples</h2>
+
+<section class="position-section">
+
+    <h3>Relative Position</h3>
+    <div class="relative-box">
+        <p>This box is positioned relative. Moves 20px down and 20px right from its normal position.</p>
+    </div>
+
+    
+    <h3>Absolute Position</h3>
+    <div class="absolute-container">
+        <p class="absolute-box">This box is positioned absolute inside a container.</p>
+    </div>
+
+
+    <h3>Fixed Position</h3>
+    <p class="fixed-box">This paragraph has fixed position. It stays at bottom-right when scrolling.</p>
+
+    <h3>Sticky Position</h3>
+    <p class="sticky-box">This paragraph is sticky. It will stick to top of the page when you scroll.</p>
+
+    <div style="height: 800px;"></div>
+
+</section>
+<!-- 
+7. create div that show a image when user hover that div image will be zoom-in or zoom-out (overflow: visible, auto, hidden) -->
+ 
+<h2>Image Zoom on Hover with Overflow</h2>
+
+<div class="image-container visible">
+    <p>Overflow: visible</p>
+    <div class="image-box">
+        <img src="ai.jpg" alt="Sample Image">
+    </div>
 </div>
 
+<div class="image-container auto">
+    <p>Overflow: auto</p>
+    <div class="image-box">
+        <img src="ai.jpg" alt="Sample Image">
+    </div>
+</div>
 
+<div class="image-container hidden">
+    <p>Overflow: hidden</p>
+    <div class="image-box">
+        <img src="ai.jpg" alt="Sample Image">
+    </div>
+</div>
 
+ <!-- 8. show html list with different type of bullets with css {list-style-type, list-style-position, list-style-image, }
+(ex. unordered list with square bullets)
+  -->
+
+  <h2>Different Types of List Bullets</h2>
+
+<!-- Unordered List with square bullets -->
+<h3>Unordered List - Square Bullets</h3>
+<ul class="square-bullets">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ul>
+
+<!-- Unordered List - Circle bullets inside -->
+<h3>Unordered List - Circle Bullets Inside</h3>
+<ul class="circle-inside">
+    <li>React</li>
+    <li>Angular</li>
+    <li>Vue</li>
+</ul>
+
+<!-- Ordered List with decimal numbers -->
+<h3>Ordered List - Decimal Numbers</h3>
+<ol class="decimal-list">
+    <li>Introduction</li>
+    <li>Basics</li>
+    <li>Advanced</li>
+</ol>
+
+<!-- List with image bullets -->
+<h3>List with Image Bullets</h3>
+<ul class="image-bullets">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+</ul>
+
+<!-- 
+9. create a section that show css visibility property like hidden and visible
+(ex. section with three image when user hover on images that hide and show) -->
+
+<h2>CSS Visibility Example</h2>
+
+<section class="visibility-section">
+    <h3>Hover over the images to hide or show them</h3>
+    
+    <div class="image-container">
+        <img src="ai.jpg" alt="Image 1" class="hover-hide">
+       
+    </div>
+</section>
+<!-- 
+10. create a section that show different type of cursors like pointer, auto, all-scroll, copy, default, move, e-resize, w-resize, n-resize, s-resize, text, wait, help, progress, not-allowed, zoom-in, zoom-out, no-drop (Min. 8 types)
+(ex. create a div that show cursor pointer when user hover on it)
+ 
+  -->
+
+  <h2>CSS Cursor Types Example</h2>
+
+<section class="cursor-section">
+    <div class="cursor-box pointer">Pointer</div>
+    <div class="cursor-box text">Text</div>
+    <div class="cursor-box move">Move</div>
+    <div class="cursor-box wait">Wait</div>
+    <div class="cursor-box help">Help</div>
+    <div class="cursor-box not-allowed">Not Allowed</div>
+    <div class="cursor-box zoom-in">Zoom In</div>
+    <div class="cursor-box zoom-out">Zoom Out</div>
+    <div class="cursor-box copy">Copy</div>
+    <div class="cursor-box e-resize">E-Resize</div>
+    <div class="cursor-box all-scroll">All-Scroll</div>
+    <div class="cursor-box progress">Progress</div>
+</section>
+
+<!-- 11. create a btn with div and css -->
+ <br>
+ <br>
+
+ 
+<h2>Button using Div</h2>
+
+<div class="btn">Click Me</div>
+
+<!-- 12. show all css fitlers on image {filters like brightness, blur, Sepia, Grayscale, Hue-rotate, Contrast, Drop-shadow, Saturate} (don't change that image, same image show diffrent filters)
+(ex. image that blur effect )
+  -->
+
+  
 </body>
 </html>

@@ -121,7 +121,7 @@
     display: inline-block;
     width: 100px;
     height: 50px;
-    background-color: lightgreen;
+    background-color: rgb(56, 129, 212);
     margin: 5px;
     text-align: center;
     line-height: 50px;
@@ -157,3 +157,219 @@
     text-align: center;
 }
 
+/* 6 task */
+
+
+
+/* Relative */
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: lightblue;
+    padding: 10px;
+    width: 300px;
+}
+
+/* Absolute */
+.absolute-container {
+    position: relative; 
+    height: 150px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.absolute-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/* Fixed */
+.fixed-box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: orange;
+    padding: 10px;
+    color: white;
+}
+
+/* Sticky */
+.sticky-box {
+    position: sticky;
+    top: 0;
+    background-color: pink;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+/* 7 task */
+
+.image-container {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+    border: 2px solid #333;
+    position: relative;
+}
+
+.image-container p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Different overflow styles */
+.visible .image-box {
+    overflow: visible;
+}
+
+.auto .image-box {
+    overflow: auto;
+}
+
+.hidden .image-box {
+    overflow: hidden;
+}
+
+/* Image box */
+.image-box {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+/* Image styling */
+.image-box img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+
+.image-box:hover img {
+    transform: scale(1.2); 
+}
+
+/* 8 task */
+
+
+.square-bullets {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+
+.circle-inside {
+    list-style-type: circle;
+    list-style-position: inside; 
+    margin-left: 20px;
+}
+
+
+.decimal-list {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+
+.image-bullets {
+    list-style-image: url('');
+    margin-left: 20px;
+}
+
+/* 9 task */
+
+.visibility-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+/* Initially visible */
+.hover-hide {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Hide image on hover */
+.hover-hide:hover {
+    visibility: hidden;
+    opacity: 0; /* smooth transition effect */
+}
+/* 
+10 task */
+
+.cursor-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.cursor-box {
+    width: 120px;
+    height: 80px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: lightgray;
+    transition: background-color 0.3s;
+}
+
+/* Change background on hover */
+.cursor-box:hover {
+    background-color: #a3d2ca;
+}
+
+/* Cursor types */
+.pointer { cursor: pointer; }
+.text { cursor: text; }
+.move { cursor: move; }
+.wait { cursor: wait; }
+.help { cursor: help; }
+.not-allowed { cursor: not-allowed; }
+.zoom-in { cursor: zoom-in; }
+.zoom-out { cursor: zoom-out; }
+.copy { cursor: copy; }
+.e-resize { cursor: e-resize; }
+.all-scroll { cursor: all-scroll; }
+.progress { cursor: progress; }
+
+/* 10 task */
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50; 
+    color: rgb(224, 69, 69);               
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;         
+    cursor: pointer;            
+        transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: #238bd1;  
+    transform: scale(1.05);    
+}
+
+/* Active/click effect */
+.btn:active {
+    transform: scale(0.95);     
+}
