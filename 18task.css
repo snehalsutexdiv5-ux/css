@@ -1,0 +1,159 @@
+.box {
+    width: 300px;
+    padding: 15px;
+    margin-bottom: 20px;
+   background-color: rgb(163, 235, 213);
+}
+
+.border-top {
+    border-top: 10px solid black;
+}
+
+.border-right {
+    border-right: 20px solid blue;
+}
+
+
+.border-bottom {
+    border-bottom: 20px solid green;
+}
+
+.border-left {
+    border-left: 40px solid red;
+}
+
+/* 
+  hover design */
+
+
+.hover-box {
+
+    width: 300px;
+    height: 300px;
+    background-color: rgb(78, 76, 76);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease; 
+    margin-top: 20px;
+}
+
+
+.hover-box:hover {
+    background-color: rgb(247, 125, 11);   
+    color: rgb(18, 107, 240);
+    width: 250px; 
+    font-size: 2.5rem;             
+    transform: translateX(20px); 
+}
+
+/* links */
+
+
+.styled-link:link {
+    color: blue;
+    text-decoration: none;
+}
+
+
+.styled-link:visited {
+    color: purple;
+}
+
+
+.styled-link:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+.styled-link:active {
+    color: red;
+}
+
+/* 4 th task */
+
+.demo-section {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 450px;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.demo-text::first-letter {
+    font-size: 40px;
+    color: blue;
+    font-weight: bold;
+}
+
+.demo-text::first-line {
+    color: green;
+}
+
+.demo-section::before {
+    content: "* Start of Section";
+    display: block;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.demo-section::after {
+    content: "End of Section *";
+    display: block;
+    color: gray;
+    margin-top: 10px;
+}
+
+.demo-text::selection {
+    background-color: rgb(100, 187, 238);
+    color: white;
+}
+/* 
+5th task */
+
+.inline {
+    display: inline;
+    background-color: lightblue;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    background-color: lightgreen;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.none {
+    display: none;
+}
+
+
+.flex-container {
+    display: flex;
+    gap: 10px;
+}
+
+.flex-item {
+    background-color: orange;
+    padding: 20px;
+    width: 50px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+}
+
