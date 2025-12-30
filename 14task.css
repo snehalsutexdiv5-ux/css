@@ -1,0 +1,178 @@
+/* task1______________________________________________________________________ */
+
+task-title {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Rotate Box */
+.rotate-box {
+    width: 150px;
+    height: 150px;
+    background-color: #e419f7;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.5s ease; /* smooth rotation */
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* Rotate 360 degrees on hover */
+.rotate-box:hover {
+    transform: rotate(400deg);
+}
+
+/* task2____________________________________________________________________________________ */
+
+.task2-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.flex-item {
+    background-color: #4caf50;
+    color: white;
+    padding: 30px;
+    flex: 1 1 100px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #2196f3;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* task3----------------------------------------------------------------------- */
+.justify-demo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Each flex container */
+.justify-container {
+    display: flex;
+    border: 2px dashed #333;
+    padding: 10px;
+    align-items: center;
+    min-height: 80px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Boxes inside flex container */
+.justify-container .box {
+    width: 50px;
+    height: 50px;
+    background-color: #4caf50;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Different justify-content properties */
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+/* Center the <p> heading above boxes */
+.justify-container p {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 0 10px 0; /* space below the text */
+}
+
+/* task4----------------------------------------------------------------------- */
+
+.stroke-text {
+    color: white;                    
+    -webkit-text-stroke: 2px black;  
+    -moz-text-stroke: 2px black;      
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* task5----------------------------------------------------------------------- */
+
+/* Auto columns based on width */
+.columns-auto {
+    column-width: 150px;
+    column-gap: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+/* Fixed number of columns */
+.columns-count {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+/* Column width with auto column count */
+.columns-width {
+    column-width: 150px;
+    column-gap: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+

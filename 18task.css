@@ -206,55 +206,62 @@
 }
 
 
-/* 7 task */
+/* ___________________________________________________________________7 task */
 
-.image-container {
-    width: 300px;
-    height: 200px;
-    margin-bottom: 30px;
-    border: 2px solid #333;
-    position: relative;
+/* ===== Task 7: Image Zoom with Overflow ===== */
+.zoom-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-.image-container p {
-    margin: 5px 0;
+.zoom-section .image-container {
+    text-align: center;
+}
+
+.zoom-section .image-container p {
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
-/* Different overflow styles */
-.visible .image-box {
+/* Image box styling */
+.zoom-section .image-box {
+    width: 200px;
+    height: 150px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Set overflow for each container */
+.zoom-section .image-container.visible .image-box {
     overflow: visible;
 }
 
-.auto .image-box {
+.zoom-section .image-container.auto .image-box {
     overflow: auto;
 }
 
-.hidden .image-box {
+.zoom-section .image-container.hidden .image-box {
     overflow: hidden;
 }
 
-/* Image box */
-.image-box {
+/* Zoom-in effect on hover */
+.zoom-section .image-box img {
     width: 100%;
     height: 100%;
-    transition: transform 0.4s ease;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-/* Image styling */
-.image-box img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    transition: transform 0.4s ease;
+.zoom-section .image-box:hover img {
+    transform: scale(1.2); /* zoom-in */
 }
 
 
-.image-box:hover img {
-    transform: scale(1.2); 
-}
 
-/* 8 task */
+/*____________________________________________________________________ 8 task */
 
 
 .square-bullets {
@@ -405,3 +412,259 @@
 .contrast { filter: contrast(200%); }
 .drop-shadow { filter: drop-shadow(5px 5px 5px gray); }
 .saturate { filter: saturate(200%); }
+
+
+/* 13 task */
+
+.box {
+    width: 140px;
+    height: 90px;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+   
+}
+
+/* Hex color */
+.hex {
+    background-color: #ff5733;
+}
+
+/* RGB color */
+.rgb {
+    background-color: rgb(34, 139, 34);
+}
+
+/* RGBA color */
+.rgba {
+    background-color: rgba(0, 0, 255, 0.6);
+}
+
+/* HSL color */
+.hsl {
+    background-color: hsl(200, 70%, 50%);
+}
+
+/* HSLA color */
+.hsla {
+    background-color: hsla(300, 60%, 50%, 0.7);
+}
+
+.box {
+    width: 140px;
+    height: 90px;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Hex color */
+.hex {
+    background-color: #ff5733;
+}
+
+/* RGB color */
+.rgb {
+    background-color: rgb(34, 139, 34);
+}
+
+/* RGBA color */
+.rgba {
+    background-color: rgba(0, 0, 255, 0.6);
+}
+
+/* HSL color */
+.hsl {
+    background-color: hsl(200, 70%, 50%);
+}
+
+/* HSLA color */
+.hsla {
+    background-color: hsla(300, 60%, 50%, 0.7);
+}
+
+/* Color name */
+.name {
+    background-color: teal;
+}
+
+/* _____________________________________________________________________14 task */
+
+
+/* Universal Selector */
+.css-selectors * {
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+.css-selectors h1 {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.css-selectors p {
+    color: brown;
+    font-size: 16px;
+}
+
+/* Class Selector */
+.css-selectors .box {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px 0;
+    width: 220px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ID Selector */
+.css-selectors #unique {
+    background-color: lightcoral;
+    color: white;
+    padding: 10px;
+    width: 220px;
+    margin: 10px 0;
+}
+
+/* Group Selector */
+.css-selectors h2,
+.css-selectors h3 {
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+
+/* Universal Selector example for span */
+.css-selectors span {
+    color: green;
+    font-style: italic;
+}
+
+/* 
+________________________________________________________________task 15 */
+
+/* Task 15: Shadows */
+
+/* Text Shadow for h1 */
+.text-shadow {
+    color: darkblue;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 3px 3px 5px gray;
+}
+
+/* Box Shadow for div */
+.box-shadow {
+    width: 300px;
+    height: 150px;
+    margin: 30px auto;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5); 
+}
+/* 
+_______________________________________________________________________task 16 */
+
+.gradient-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.radial-gradient,
+.linear-gradient {
+    width: 300px;
+    height: 150px;
+    margin: 20px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Radial Gradient */
+.radial-gradient {
+    background: radial-gradient(circle, #ff9800, #f44336, #9c27b0);
+}
+
+/* Linear Gradient */
+.linear-gradient {
+    background: linear-gradient(to right, #2196f3, #00c853, #ffeb3b);
+}
+/* 
+17task_______________________________________________________________ */
+
+.text-normal {
+    font-size: 24px;
+}
+
+.text-size {
+    font-size: 40px;
+}
+
+.text-family {
+    font-family: "Courier New", monospace;
+    font-size: 28px;
+}
+
+.text-style {
+    font-style: italic;
+    font-size: 26px;
+}
+
+.text-weight {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.text-variant {
+    font-variant: small-caps;
+    font-size: 28px;
+}
+
+.text-color {
+    color: darkred;
+    font-size: 20px;
+}
+/* 
+______________________________________________________________________task 18 */
+
+/* =========================
+   Library Demo Styles
+   ========================= */
+
+.library-demo {
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.library-demo .demo-heading {
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    color: #ff5722;
+    margin-bottom: 20px;
+}
+
+.library-demo .demo-icon {
+    font-size: 40px;
+    color: #2196f3;
+    margin-right: 15px;
+}
+
+.library-demo .demo-btn {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+

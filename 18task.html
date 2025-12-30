@@ -153,27 +153,28 @@
 </section>
 <!-- 
 7. create div that show a image when user hover that div image will be zoom-in or zoom-out (overflow: visible, auto, hidden) -->
- 
-<h2>Image Zoom on Hover with Overflow</h2>
+ <h2>Task 7: Image Zoom on Hover with Overflow</h2>
 
-<div class="image-container visible">
-    <p>Overflow: visible</p>
-    <div class="image-box">
-        <img src="ai.jpg" alt="Sample Image">
+<div class="zoom-section">
+    <div class="image-container visible">
+        <p>Overflow: visible</p>
+        <div class="image-box">
+            <img src="ai.jpg" alt="Sample Image">
+        </div>
     </div>
-</div>
 
-<div class="image-container auto">
-    <p>Overflow: auto</p>
-    <div class="image-box">
-        <img src="ai.jpg" alt="Sample Image">
+    <div class="image-container auto">
+        <p>Overflow: auto</p>
+        <div class="image-box">
+            <img src="ai.jpg" alt="Sample Image">
+        </div>
     </div>
-</div>
 
-<div class="image-container hidden">
-    <p>Overflow: hidden</p>
-    <div class="image-box">
-        <img src="ai.jpg" alt="Sample Image">
+    <div class="image-container hidden">
+        <p>Overflow: hidden</p>
+        <div class="image-box">
+            <img src="ai.jpg" alt="Sample Image">
+        </div>
     </div>
 </div>
 
@@ -264,6 +265,8 @@
 <!-- 12. show all css fitlers on image {filters like brightness, blur, Sepia, Grayscale, Hue-rotate, Contrast, Drop-shadow, Saturate} (don't change that image, same image show diffrent filters)
 (ex. image that blur effect )
   -->
+<br>
+<br>
 
   <h2>CSS Image Filters Example</h2>
 
@@ -314,7 +317,124 @@
         <img src="ai.jpg" class="saturate" alt="Saturate">
     </div>
 
+
 </section>
+<!-- 
+13. create a divs that show different color with different color syntax like hex, rgb, rgba, hsl, hsla, color name -->
+
+<br>
+<br>
+
+    <div class="box hex">HEX</div>
+    <div class="box rgb">RGB</div>
+    <div class="box rgba">RGBA</div>
+    <div class="box hsl">HSL</div>
+    <div class="box hsla">HSLA</div>
+    <div class="box name">Color Name</div>
+
+
+
+    <!-- 14. All CSS Selectors like element selector, class selector, group selecors, universal selector, id selector
+  -->
+
+<h1>Task 14: CSS Selectors Demo</h1>
+
+<!-- Wrap Task 14 content in a parent div -->
+<div class="css-selectors">
+
+    <!-- Element Selector -->
+    <h1>Element Selector</h1>
+    <p>This paragraph is styled using an element selector.</p>
+
+    <!-- Class Selector -->
+    <div class="box">Class Selector</div>
+
+    <!-- ID Selector -->
+    <div id="unique">ID Selector</div>
+
+    <!-- Group Selector -->
+    <h2>Group Selector h2</h2>
+    <h3>Group Selector h3</h3>
+
+    <!-- Universal Selector -->
+    <span>This span is affected by the universal selector inside this section.</span>
+
+</div>
+
+
+<!-- 15. create a div that show box-shadow and h1 text that show text-shadow --> 
+
+ <h1 class="text-shadow">This is Text Shadow</h1>
+
+    <div class="box-shadow">
+        Welcome to our cart
+    </div>
+
+
+<!-- 
+    16. create a two div one is show radial gradient and another is show linear gradient
+  -->
+
+    <h1>CSS Gradients</h1>
+    <div class="gradient-wrapper">
+    <div class="radial-gradient">
+        Radial Gradient
+    </div>
+
+    <div class="linear-gradient">
+        Linear Gradient
+    </div>
+
+<!-- 
+    17. write a text that show different types of text property like font-size, font-family, font-variant, font-color, font-style, font-weight 
+(ex. first h1 show pain text, second show bigger font size, third show different font-family with font-size) -->
+
+<h1 class="text-normal">This is plain text (default)</h1>
+<h1 class="text-size">This text has bigger font size</h1>
+<h1 class="text-family">This text has different font family</h1>
+<h1 class="text-style">This text shows font style (italic)</h1>
+<h1 class="text-weight">This text shows font weight (bold)</h1>
+<h1 class="text-variant">This text shows font variant (small-caps)</h1>
+<p class="text-color">
+    This paragraph shows font color property
+</p>
+
+<!-- 
+18. use three libraries like google font, font-awesome, bootstrap etc. (don't use svg) -->  
+<!-- 1. Google Fonts -->
+ 
+<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="library-demo.css">
+</head>
+<body>
+
+  <!-- ===== Library Demo Container ===== -->
+  <section class="library-demo">
+    <h1 class="demo-heading">Google Fonts Example: Lobster</h1>
+
+    <p>
+      Font Awesome Icons: 
+      <i class="demo-icon fas fa-star"></i>
+      <i class="demo-icon fas fa-heart"></i>
+      <i class="demo-icon fas fa-moon"></i>
+    </p>
+
+    <!-- Bootstrap Buttons -->
+    <button class="demo-btn btn btn-primary">Primary</button>
+    <button class="demo-btn btn btn-success">Success</button>
+    <button class="demo-btn btn btn-danger">Danger</button>
+  </section>
+  
+
 
 
 </body>
