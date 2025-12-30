@@ -174,5 +174,70 @@ task-title {
     padding: 10px;
     border: 1px solid #333;
 }
+/* 
+task6---------------------------------------------------------------------- */
+.hyphens-section {
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
 
+.hyphens-none {
+    hyphens: none;
+    border: 1px solid #333;
+    padding: 10px;
+    word-wrap: break-word;
+}
 
+.hyphens-manual {
+    hyphens: manual;
+    border: 1px solid #333;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.hyphens-auto {
+    hyphens: auto;
+    border: 1px solid #333;
+    padding: 10px;
+    word-wrap: break-word;
+}
+/* 
+task7-------------------------------------------------------------------------------------- */
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #2196f3;
+    color: white;
+    line-height: 100px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+/* Transform origin center (default) */
+.scale-center:hover {
+    transform-origin: center;
+    transform: scale(1.5);
+}
+
+/* Transform origin top left */
+.scale-top-left:hover {
+    transform-origin: top left;
+    transform: scale(1.5);
+}
+
+/* Transform origin bottom right */
+.scale-bottom-right:hover {
+    transform-origin: bottom right;
+    transform: scale(1.5);
+}
